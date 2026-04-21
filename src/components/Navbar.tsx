@@ -12,6 +12,7 @@ const navLinks = [
 // ── Replace this with your actual WhatsApp number (international format, no +)
 const WHATSAPP_NUMBER = "+923272452671";
 const WHATSAPP_MESSAGE = "Hi Hermes! I found your portfolio and I'd love to discuss a project with you.";
+const EMAIL_ADDRESS = "hellomedia555@gmail.com";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -175,8 +176,8 @@ export default function Navbar() {
                 </a>
 
                 <p className="text-gray-600 text-xs">
-                  Or email at{" "}
-                  <a href="mailto:hello@hermes.dev" className="text-gray-400 hover:text-primary transition-colors duration-200">
+                  Or email at {" "}
+                  <a href={`mailto:${EMAIL_ADDRESS}`} className="text-gray-400 hover:text-primary transition-colors duration-200">
                     hello@hermes.dev
                   </a>
                 </p>

@@ -17,8 +17,10 @@ export default function Footer() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
       {/* Big background text */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 font-display font-bold text-[8rem] sm:text-[14rem] text-white/[0.02] select-none pointer-events-none leading-none whitespace-nowrap">
-        HERMES
+      <div className="absolute bottom-0 left-0 right-0 overflow-hidden flex justify-center">
+        <div className="font-display font-bold text-[8rem] sm:text-[14rem] text-white/[0.02] select-none pointer-events-none leading-none whitespace-nowrap">
+          HERMES
+        </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-6 sm:px-8 pt-16 sm:pt-20 pb-10 relative">

@@ -17,7 +17,7 @@ const galleryImages = [
 export default function Contact() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-
+  const EMAIL_ADDRESS = "hellomedia555@gmail.com";
   const WHATSAPP_NUMBER = "+923272452671";
   const WHATSAPP_MESSAGE = "Hi Hermes! I found your portfolio and I'd love to discuss a project with you.";
   const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
@@ -75,7 +75,7 @@ export default function Contact() {
             Chat on WhatsApp
           </a>
           <a
-            href="mailto:hello@hermes.dev"
+            href={`mailto:${EMAIL_ADDRESS}`}
             className="flex items-center gap-3 border ghost-border hover:border-primary/30 text-gray-300 hover:text-white px-8 py-4 rounded-xl font-bold text-base transition-all duration-200"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
